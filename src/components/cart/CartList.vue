@@ -17,7 +17,7 @@
     <hr/>
     <button class="btn btn-success btn-lg">
       Checkout
-      <span>($)</span>
+      <span>(${{ cartTotal }})</span>
     </button>
   </div>
 </template>
@@ -35,7 +35,7 @@ export default {
     this.$store.dispatch('fetchCartItems')
   },
   computed: {
-    ...mapGetters(['cartItems'])
+    ...mapGetters(['cartItems', 'cartTotal'])
   }
 };
 </script>

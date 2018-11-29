@@ -8,6 +8,9 @@ const state = {
 const getters = {
   cartItems (state) {
     return state.cartItems
+  },
+  cartTotal (state) {
+    return state.cartItems.reduce((prev, cartItem) => cartItem.qty * cartItem.price + prev , 0).toFixed(2)
   }
 }
 const mutations = {
