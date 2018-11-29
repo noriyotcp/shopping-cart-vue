@@ -1,4 +1,7 @@
 # shopping-cart-vue
+Original: https://github.com/HaiderMalik12/shopping-cart-vue
+
+Udemy Course: https://www.udemy.com/building-applications-with-vuejs/
 
 ## Project setup
 ```
